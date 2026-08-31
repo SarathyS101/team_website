@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --surface: #f7f8fa;
+  --foreground: #14181f;
+  --muted: #5a6472;
+  --border: #e3e6ec;
+  /* Carolina blue */
+  --accent: #4b9cd3;
+  --accent-strong: #13598c;
+  --accent-contrast: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c0f14;
+    --surface: #141922;
+    --foreground: #e9edf3;
+    --muted: #9aa5b4;
+    --border: #232b37;
+    --accent: #7cc0ea;
+    --accent-strong: #a8d7f5;
+    --accent-contrast: #0c0f14;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-contrast: var(--accent-contrast);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Keep anchor targets clear of the sticky header. */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
