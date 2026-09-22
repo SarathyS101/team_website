@@ -11,12 +11,12 @@ export const site = {
   university: "The University of North Carolina at Chapel Hill",
   semester: "Fall 2026",
 
-  /** Short line under the site title. TODO: replace. */
-  tagline: "TODO: one-line description of what your project does.",
+  /** Short line under the site title. */
+  tagline: "Cross-platform interactive GUI for analytical optical lens design and aberration analysis.",
 
-  /** Public code repository for the project. TODO: replace. */
-  repoUrl: "https://github.com/your-org/your-repo",
+  /** Public code repository for the project. */
+  repoUrl: "https://github.com/SarathyS101/team_website",
 
   /** Bump this whenever you update the site. The footer shows it. */
-  lastUpdated: "2026-08-31",
+  lastUpdated: "2026-09-22",
 } as const;

@@ -88,12 +88,10 @@ export const members: readonly TeamMember[] = [
   },
 ];
 
-/** TODO: replace with your actual client. */
 export const client: Contact = {
-  name: "TODO: Client Name",
-  title: "TODO: Title",
-  organization: "TODO: Organization",
-  email: "todo@example.com",
+  name: "Haosheng Shi",
+  title: "Client & Optical Researcher",
+  organization: "LieOptics",
 };
 
 /** Instructors, mentors, domain experts. TODO: replace or empty this array. */

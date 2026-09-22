@@ -36,21 +36,63 @@ export type JournalEntry = {
 /** Newest first is conventional here, but the page sorts regardless. */
 export const entries: readonly JournalEntry[] = [
   {
-    date: "2026-08-31",
-    type: "Team",
-    title: "TODO: Kickoff",
-    attendees: ["TODO: Name", "TODO: Name", "TODO: Name", "TODO: Name"],
+    date: "2026-09-17",
+    type: "Client",
+    title: "Client Meeting with Haosheng Shi",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Haosheng Shi",
+    ],
     topics: [
-      "TODO: What the team discussed at this meeting.",
-      "TODO: Another topic considered.",
+      "Discussed the optical design tool backend (LieOptics) and frontend requirements.",
+      "Reviewed client expectations, deliverables, and project scope.",
+      "Secured repository access to the client's backend codebase.",
+      "Discussed user workflows for lens definition, optimization, and visualization.",
     ],
     decisions: [
-      "TODO: A decision the team made, stated plainly.",
-      "TODO: Another decision.",
+      "Agreed to create Figma mockups for the frontend interface to review with the client.",
+      "Confirmed frontend scope: cross-platform application and a thin API layer connecting to the existing Python backend.",
+      "Confirmed that the team will not need to modify the core Python computational backend.",
     ],
     actionItems: [
-      { owner: "TODO: Name", task: "TODO: What they will do before next meeting." },
-      { owner: "TODO: Name", task: "TODO: What they will do before next meeting." },
+      {
+        owner: "All team members",
+        task: "Review the LieOptics repository and familiarize with backend APIs.",
+      },
+      {
+        owner: "All team members",
+        task: "Design initial Figma mockups for the optical design tool frontend.",
+      },
+    ],
+  },
+  {
+    date: "2026-09-15",
+    type: "Manager",
+    title: "Mentor Meeting: Guidelines & Course Success",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Faculty Mentor",
+    ],
+    topics: [
+      "Reviewed general course guidelines and requirements for COMP 523.",
+      "Discussed best practices and strategies on how to succeed in the class.",
+      "Covered team expectations, communication cadence, and milestone planning.",
+    ],
+    decisions: [
+      "Established team operating standards in accordance with course guidelines.",
+      "Confirmed preparation steps and agenda for the upcoming client kickoff meeting.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Review course guidelines and prepare questions for the client meeting.",
+      },
     ],
   },
 ];
