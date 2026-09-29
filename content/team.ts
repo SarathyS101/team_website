@@ -64,7 +64,7 @@ export const members: readonly TeamMember[] = [
     responsibilities: [
       "TBD",
     ],
-    email: "todo2@unc.edu",
+    email: "avipatel@unc.edu",
     github: "https://github.com/todo2",
   },
   {
@@ -73,7 +73,7 @@ export const members: readonly TeamMember[] = [
     responsibilities: [
       "TBD",
     ],
-    email: "todo3@unc.edu",
+    email: "lganesha@unc.edu",
     github: "https://github.com/todo3",
   },
   {
@@ -83,7 +83,7 @@ export const members: readonly TeamMember[] = [
     responsibilities: [
       "TBD",
     ],
-    email: "todo4@unc.edu",
+    email: "psushant@unc.edu",
     github: "https://github.com/todo4",
   },
 ];
