@@ -54,25 +54,44 @@ export const recurringMeetings: readonly Meeting[] = [
     time: "TODO: 2:00–2:30 PM ET",
     location: "TODO: Sitterson Hall, Room TBD",
   },
+  {
+    what: "TA meeting",
+    who: "All team members, course TA",
+    cadence: "Every two weeks (Zoom)",
+    time: "TODO: confirm slot with TA",
+    location: "Video call (link provided by the TA)",
+  },
+  {
+    what: "Weekly progress report (PPP)",
+    who: "All team members",
+    cadence: "Weekly, by 11:59 PM the day before the TA meeting slot",
+    time: "11:59 PM ET deadline",
+    location: "Posted on this site, with a confirmation email to the TA",
+  },
 ];
 
-/** Milestones, demos, and acceptance testing. TODO: replace. */
+/** Milestones, demos, and acceptance testing. */
 export const keyEvents: readonly KeyEvent[] = [
   {
     date: "2026-09-15",
-    what: "TODO: Requirements sign-off with client",
+    what: "Requirements sign-off",
+  },
+  {
+    date: "2026-10-05",
+    what: "Midterm talks begin",
+    detail: "Midterm talks run 10/5 to 10/12.",
   },
   {
     date: "2026-10-20",
-    what: "TODO: Midpoint demo",
-    detail: "TODO: Demonstrate the core workflow end to end.",
+    what: "Midpoint demo",
+    detail: "Demonstrate lens definition through aberration analysis and spot diagram, end to end.",
   },
   {
     date: "2026-11-17",
-    what: "TODO: Client acceptance testing",
+    what: "Client acceptance testing",
   },
   {
     date: "2026-12-05",
-    what: "TODO: Final presentation and handoff",
+    what: "Final presentation and hand-off",
   },
 ];
