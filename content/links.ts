@@ -23,20 +23,29 @@ export type LinkGroup = {
   links: readonly Link[];
 };
 
-/** TODO: replace these with links the team actually uses. */
 export const linkGroups: readonly LinkGroup[] = [
   {
     heading: "Project & course",
     links: [
       {
         label: "COMP 523 course site",
-        href: "https://www.cs.unc.edu/",
-        note: "TODO: point this at the real course page.",
+        href: "https://www.cs.unc.edu/~stotts/COMP523-F26/",
+        note: "Syllabus, calendar, and team pages.",
       },
       {
-        label: "TODO: Client's website",
-        href: "https://example.com",
-        note: "TODO: background on the client organization.",
+        label: "COMP 523 deliverables",
+        href: "https://www.cs.unc.edu/~stotts/COMP523-F26/deliverables.html",
+        note: "The formal deliverables D1 to D5 and milestones.",
+      },
+      {
+        label: "TA course requirements",
+        href: "https://hackmd.io/zci0WxDvSfC9OpvXnEK2Aw",
+        note: "Weekly reporting, Git, and tracking rules from the TA.",
+      },
+      {
+        label: "LieOptics backend repository",
+        href: "https://github.com/hausenshi/LieOptics",
+        note: "The Python package this frontend wraps.",
       },
     ],
   },
@@ -62,15 +71,35 @@ export const linkGroups: readonly LinkGroup[] = [
         label: "TypeScript handbook",
         href: "https://www.typescriptlang.org/docs/handbook/intro.html",
       },
+      {
+        label: "React documentation",
+        href: "https://react.dev/",
+        note: "UI library for the LieOptics frontend.",
+      },
+      {
+        label: "Electron documentation",
+        href: "https://www.electronjs.org/docs/latest",
+        note: "Packages the frontend as a cross-platform desktop app.",
+      },
+      {
+        label: "pre-commit",
+        href: "https://pre-commit.com/",
+        note: "Runs the commit-message and lint checks the course requires.",
+      },
+      {
+        label: "Conventional Commits",
+        href: "https://www.conventionalcommits.org/en/v1.0.0/",
+        note: "Our commit message style.",
+      },
     ],
   },
   {
     heading: "Domain references",
     links: [
       {
-        label: "TODO: Domain reference",
-        href: "https://example.com",
-        note: "TODO: why the team keeps coming back to this.",
+        label: "awesome-deep-optics",
+        href: "https://github.com/hausenshi/awesome-deep-optics",
+        note: "Curated paper list on optics design from the client's account.",
       },
     ],
   },
@@ -78,9 +107,9 @@ export const linkGroups: readonly LinkGroup[] = [
     heading: "Similar projects to learn from",
     links: [
       {
-        label: "TODO: Comparable project",
-        href: "https://example.com",
-        note: "TODO: what this one does well that we can borrow.",
+        label: "DeepLens",
+        href: "https://github.com/hausenshi/DeepLens",
+        note: "Differentiable optical simulation; shows how optics results are presented.",
       },
     ],
   },
