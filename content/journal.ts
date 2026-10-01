@@ -38,7 +38,7 @@ export const entries: readonly JournalEntry[] = [
   {
     date: "2026-10-01",
     type: "Team",
-    title: "Week 1 planning: project setup and frontend basis",
+    title: "Week 1: project setup and a first frontend prototype",
     attendees: [
       "Sarathy Selvam",
       "Avi Patel",
@@ -46,13 +46,15 @@ export const entries: readonly JournalEntry[] = [
       "Sushant Potu",
     ],
     topics: [
-      "Reviewed the TA's course requirements (weekly progress reports, Gitflow, pre-commit hooks, Kanban).",
-      "Cloned the LieOptics backend and reviewed its API (system definition, optimization, spot diagrams).",
+      "Reviewed the TA's course requirements (weekly progress reports, Gitflow, pre-commit hooks, Kanban) from the HackMD doc and folded them into this site's deliverables, schedule, and rules.",
+      "Reviewed the LieOptics backend's API (lens system definition, optimization, spot diagrams) without modifying it.",
       "Drafted a week-by-week plan from now through the 12/5 final presentation.",
-      "Started a basic frontend prototype (lens builder, aberration table, spot diagram) using mock data to evaluate the design.",
+      "Built a first-draft frontend prototype: a lens builder form, an aberration coefficient table, a spot diagram, and a mock optimization run, all backed by placeholder data so the design can be evaluated before the real backend is wired in.",
+      "Published the frontend prototype as its own repository and opened/merged its first pull request.",
     ],
     decisions: [
-      "TODO: confirm decisions made at the team meeting.",
+      "Keep the frontend as its own repository, separate from this website and from the client's LieOptics backend, since this site must stay a static report and the backend is the client's and is not ours to edit.",
+      "TODO: confirm any additional decisions made at the team meeting.",
     ],
     actionItems: [
       {
@@ -62,6 +64,10 @@ export const entries: readonly JournalEntry[] = [
       {
         owner: "All team members",
         task: "TODO: Prepare the midterm talk (10/5 to 10/12).",
+      },
+      {
+        owner: "All team members",
+        task: "Review the frontend prototype and note what to change before wiring in the real backend.",
       },
     ],
   },
