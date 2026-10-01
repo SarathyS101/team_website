@@ -24,41 +24,100 @@ export type Deliverable = {
   note?: string;
 };
 
-/** TODO: replace names and dates with the course Deliverables page. */
+/**
+ * Names follow the course Deliverables page (D1-D5 plus milestones). Due dates
+ * come from the course calendar and the team schedule. TODO: set a row to
+ * "Submitted" and add its `href` once the artifact is public.
+ */
 export const deliverables: readonly Deliverable[] = [
   {
-    name: "Team website established",
+    name: "Project website",
     dueDate: "2026-09-05",
     status: "In progress",
-    note: "Introduction, roles, contacts, schedule, and team rules posted.",
+    href: "https://teamc-alpha.vercel.app/",
+    note: "Introduction, roles, contacts, schedule, team rules, journal, and links posted. Updated weekly.",
   },
   {
-    name: "TODO: Requirements document",
+    name: "D1. Specifications",
     dueDate: "2026-09-19",
+    status: "In progress",
+    note: "Functional, non-functional, and interface requirements, prioritized Definite / Perhaps / Improbable.",
+  },
+  {
+    name: "Team rules and coding practices",
+    dueDate: "2026-09-26",
+    status: "In progress",
+    note: "Rules are posted on the home page. Gitflow, commit style, and pre-commit hooks are being set up.",
+  },
+  {
+    name: "User stories",
+    dueDate: "2026-09-26",
+    status: "In progress",
+  },
+  {
+    name: "Platform selection",
+    dueDate: "2026-09-26",
+    status: "In progress",
+    note: "TypeScript, React, and Electron with a Python (LieOptics) backend. Alternatives and pros/cons are being written up.",
+  },
+  {
+    name: "Architecture diagram",
+    dueDate: "2026-09-30",
+    status: "In progress",
+    note: "Electron/React UI talking to a thin API layer in front of the existing LieOptics Python code.",
+  },
+  {
+    name: "System metaphor",
+    dueDate: "2026-09-30",
     status: "Not started",
   },
   {
-    name: "TODO: Design document",
-    dueDate: "2026-10-03",
+    name: "Midterm talk",
+    dueDate: "2026-10-05",
     status: "Not started",
+    note: "Midterm talks run 10/5 to 10/12.",
   },
   {
-    name: "TODO: Midpoint demo",
+    name: "D2. Design document",
     dueDate: "2026-10-20",
     status: "Not started",
   },
   {
-    name: "TODO: Test plan",
-    dueDate: "2026-11-07",
+    name: "Midpoint demo",
+    dueDate: "2026-10-20",
+    status: "Not started",
+    note: "Lens definition to aberration coefficients and spot diagram, end to end.",
+  },
+  {
+    name: "Ethics assignment",
+    dueDate: "2026-10-21",
     status: "Not started",
   },
   {
-    name: "TODO: Client acceptance testing report",
-    dueDate: "2026-11-21",
+    name: "D3. Test plan",
+    dueDate: "2026-11-10",
+    status: "Not started",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
+  },
+  {
+    name: "Client acceptance testing",
+    dueDate: "2026-11-17",
     status: "Not started",
   },
   {
-    name: "TODO: Final deliverable and presentation",
+    name: "D4. User manual",
+    dueDate: "2026-11-30",
+    status: "Not started",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
+  },
+  {
+    name: "Client hand-off plan",
+    dueDate: "2026-11-30",
+    status: "Not started",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
+  },
+  {
+    name: "D5. Code and final presentation",
     dueDate: "2026-12-05",
     status: "Not started",
   },
