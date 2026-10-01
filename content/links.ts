@@ -43,9 +43,14 @@ export const linkGroups: readonly LinkGroup[] = [
         note: "Weekly reporting, Git, and tracking rules from the TA.",
       },
       {
+        label: "Frontend prototype repository",
+        href: "https://github.com/LakshinG/lieopitcs-Frontend",
+        note: "Our code: the D5 deliverable for this project.",
+      },
+      {
         label: "LieOptics backend repository",
         href: "https://github.com/hausenshi/LieOptics",
-        note: "The Python package this frontend wraps.",
+        note: "The client's Python package this frontend wraps.",
       },
     ],
   },

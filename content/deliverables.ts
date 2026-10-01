@@ -119,6 +119,8 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "D5. Code and final presentation",
     dueDate: "2026-12-05",
-    status: "Not started",
+    status: "In progress",
+    href: "https://github.com/LakshinG/lieopitcs-Frontend",
+    note: "Frontend prototype repository. A mock-data UI is up; the real LieOptics backend is not wired in yet.",
   },
 ];
