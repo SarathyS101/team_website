@@ -18,5 +18,5 @@ export const site = {
   repoUrl: "https://github.com/SarathyS101/team_website",
 
   /** Bump this whenever you update the site. The footer shows it. */
-  lastUpdated: "2026-09-22",
+  lastUpdated: "2026-10-01",
 } as const;
