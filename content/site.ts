@@ -14,8 +14,8 @@ export const site = {
   /** Short line under the site title. */
   tagline: "Cross-platform interactive GUI for analytical optical lens design and aberration analysis.",
 
-  /** Public code repository for the project. */
-  repoUrl: "https://github.com/SarathyS101/team_website",
+  /** Public code repository for the project (the frontend, not this website). */
+  repoUrl: "https://github.com/LakshinG/lieopitcs-Frontend",
 
   /** Bump this whenever you update the site. The footer shows it. */
   lastUpdated: "2026-10-01",
