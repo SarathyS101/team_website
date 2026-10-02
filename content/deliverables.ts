@@ -78,8 +78,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "Week 2: frontend scaffold + mock prototype",
     dueDate: "2026-10-11",
     status: "Submitted",
-    href: "https://github.com/LakshinG/lieopitcs-Frontend",
-    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. Electron packaging and the real LieOptics backend connection are still to do.",
+    href: "https://lieoptics-frontend.vercel.app",
+    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. Try it live at the link above, or see the source at github.com/LakshinG/lieopitcs-Frontend. Electron packaging and the real LieOptics backend connection are still to do.",
   },
   {
     name: "Midterm talk",
@@ -154,7 +154,7 @@ export const deliverables: readonly Deliverable[] = [
     name: "D5. Code and final presentation",
     dueDate: "2026-12-05",
     status: "In progress",
-    href: "https://github.com/LakshinG/lieopitcs-Frontend",
-    note: "Frontend prototype repository. A mock-data UI is up (builder, aberration table, spot diagram, mock optimization); the real LieOptics backend is not wired in yet, and Electron packaging has not started.",
+    href: "https://lieoptics-frontend.vercel.app",
+    note: "Live prototype above; source at github.com/LakshinG/lieopitcs-Frontend. A mock-data UI is up (builder, aberration table, spot diagram, mock optimization); the real LieOptics backend is not wired in yet, and Electron packaging has not started.",
   },
 ];
