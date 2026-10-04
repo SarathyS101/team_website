@@ -240,7 +240,7 @@ export const platformDecisions: readonly PlatformDecision[] = [
       },
     ],
     justification:
-      "Electron with a client–server layout. It satisfies the cross-platform and offline needs, plays to the team's web skills, and keeps the client's backend untouched. The renderer UI is written as a normal web app, so a browser build stays possible later.",
+      "Electron with a client–server layout as the target. It satisfies the cross-platform and offline needs, plays to the team's web skills, and keeps the client's backend untouched. Per the 10/1 team decision we build web-first (Vite + React + TypeScript) and add Electron packaging once the UI direction is settled, so the renderer is a normal web app from day one.",
   },
   {
     area: "Backend bridge",

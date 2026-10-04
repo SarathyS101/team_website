@@ -24,20 +24,18 @@ export type Deliverable = {
   note?: string;
 };
 
-const REPO = "https://github.com/LakshinG/lieopitcs-Frontend";
-
 /**
- * Full semester schedule: formal deliverables (D1–D5), course milestones, and
- * the team's weekly build targets. Dates marked "internal target" are ours, not
- * the course's — confirm against the course Deliverables page.
+ * Names follow the course Deliverables page (D1-D5 plus milestones). Due dates
+ * come from the course calendar and the team schedule. TODO: set a row to
+ * "Submitted" and add its `href` once the artifact is public.
  */
 export const deliverables: readonly Deliverable[] = [
   {
     name: "Project website",
     dueDate: "2026-09-05",
     status: "In progress",
-    href: "/",
-    note: "Introduction, roles, contacts, schedule, team rules, journal, deliverables, and links are posted. Kept current as the project moves, per the TA's weekly reporting requirement.",
+    href: "https://teamc-alpha.vercel.app/",
+    note: "Introduction, roles, contacts, schedule, team rules, journal, deliverables, and links are posted. Content is edited in content/*.ts on each weekly branch and kept current as the project moves, per the TA's weekly reporting requirement.",
   },
   {
     name: "D1. Specifications",
@@ -50,8 +48,7 @@ export const deliverables: readonly Deliverable[] = [
     name: "Team rules and coding practices",
     dueDate: "2026-09-26",
     status: "In progress",
-    href: "/#rules",
-    note: "Attendance, response time, pull-request review, blockers, and confidentiality, plus Gitflow branching, Conventional Commits, pre-commit hooks, a Kanban board, and the weekly PPP report.",
+    note: "Team rules are posted on the home page (attendance, response time, pull-request review, blockers, confidentiality). Added this week: Gitflow branching, Conventional Commits, mandatory pre-commit hooks (commit-message + lint/typecheck), a Kanban board, and the weekly PPP report, per the TA's course requirements.",
   },
   {
     name: "User stories",
@@ -77,42 +74,42 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "System metaphor",
     dueDate: "2026-09-30",
-    status: "In progress",
+    status: "Not started",
     href: "/system-metaphor",
     note: "The app as an optical bench, with code names that follow the metaphor.",
-  },
-  {
-    name: "D2. Design document",
-    dueDate: "2026-10-03",
-    status: "In progress",
-    href: "/design-document",
-    note: "Expanded architecture diagram, code repository, data definitions, and design rationale including rejected approaches.",
-  },
-  {
-    name: "Midterm talk",
-    dueDate: "2026-10-05",
-    status: "In progress",
-    href: "/midterm-plan",
-    note: "Talks run 10/5, 10/7, and 10/12 in random order; slides only, no demo. Covers functional overview, UI mockup, system metaphor, architecture, and platform.",
   },
   {
     name: "Week 2: frontend scaffold + mock prototype",
     dueDate: "2026-10-11",
     status: "In progress",
-    href: REPO,
-    note: "Vite + React + TypeScript app with a lens builder form, layout sketch, aberration table, spot diagram, and mock optimization behind a typed API interface. Electron packaging and the real backend are not done yet.",
+    href: "https://github.com/LakshinG/lieopitcs-Frontend",
+    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. Not done yet: Electron packaging and the real LieOptics backend connection.",
+  },
+  {
+    name: "Midterm talk",
+    dueDate: "2026-10-05",
+    status: "Not started",
+    href: "/midterm-plan",
+    note: "Talks run 10/5, 10/7, and 10/12 in random order; slides only, no demo. Covers functional overview, UI mockup, system metaphor, architecture, and platform.",
   },
   {
     name: "Week 3: lens builder wired to real backend",
     dueDate: "2026-10-18",
     status: "Not started",
-    note: "Replace the mock API with a thin service calling the real LieOptics package, so results shown are real.",
+    note: "Replace the mock API with a thin service (or Electron child process) calling the real LieOptics Python package (OpticalSystemSpec, LensOptimizer, SpotDiagram), so results shown in the UI are real, not placeholder.",
+  },
+  {
+    name: "D2. Design document",
+    dueDate: "2026-10-20",
+    status: "Not started",
+    href: "/design-document",
+    note: "Expanded architecture diagram, code repository, data definitions, and design rationale including rejected approaches.",
   },
   {
     name: "Midpoint demo",
     dueDate: "2026-10-20",
     status: "Not started",
-    note: "Lens definition through real aberration coefficients and a real spot diagram, end to end, using the real LieOptics backend.",
+    note: "Goal: lens definition through real aberration coefficients and a real spot diagram, end to end, using the real LieOptics backend rather than the current mock.",
   },
   {
     name: "Ethics assignment",
@@ -123,19 +120,19 @@ export const deliverables: readonly Deliverable[] = [
     name: "Weeks 5-6: layout visualization, save/load, error handling",
     dueDate: "2026-11-08",
     status: "Not started",
-    note: "Canvas-based lens visualization, reliable save and load, and backend errors shown in the UI instead of failing silently.",
-  },
-  {
-    name: "D3. Test plan",
-    dueDate: "2026-11-10",
-    status: "Not started",
-    note: "Date is the team's internal target; confirm against the course page.",
+    note: "Canvas-based lens visualization beyond the current sketch, saving and loading lens systems reliably, and surfacing backend errors (invalid parameters, failed optimization) in the UI instead of failing silently.",
   },
   {
     name: "Week 7: optimization UI, phase-space plots, tests",
     dueDate: "2026-11-15",
     status: "Not started",
-    note: "Differential-evolution controls (bounds, constraints, progress), phase-space plots, and the start of an automated test suite.",
+    note: "Real differential-evolution optimization controls (bounds, constraints, progress), phase-space plots, and the start of an automated test suite feeding into the test plan below.",
+  },
+  {
+    name: "D3. Test plan",
+    dueDate: "2026-11-10",
+    status: "Not started",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
   },
   {
     name: "Client acceptance testing",
@@ -146,25 +143,25 @@ export const deliverables: readonly Deliverable[] = [
     name: "D4. User manual",
     dueDate: "2026-11-30",
     status: "Not started",
-    note: "Date is the team's internal target; confirm against the course page.",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
   },
   {
     name: "Client hand-off plan",
     dueDate: "2026-11-30",
     status: "Not started",
-    note: "Date is the team's internal target; confirm against the course page.",
+    note: "TODO: date is the team's internal target; confirm against the course page.",
   },
   {
     name: "Weeks 9-10: packaging and final polish",
     dueDate: "2026-12-05",
     status: "Not started",
-    note: "Electron installers for the target platforms, client acceptance-testing feedback, and final presentation prep.",
+    note: "Electron installers for the target platforms, folding in client acceptance-testing feedback, and final presentation prep.",
   },
   {
     name: "D5. Code and final presentation",
     dueDate: "2026-12-05",
     status: "In progress",
-    href: REPO,
-    note: "Frontend prototype repository. A mock-data UI is up; the real LieOptics backend is not wired in yet and Electron packaging has not started.",
+    href: "https://github.com/LakshinG/lieopitcs-Frontend",
+    note: "Frontend prototype repository. A mock-data UI is up (builder, aberration table, spot diagram, mock optimization); the real LieOptics backend is not wired in yet, and Electron packaging has not started.",
   },
 ];

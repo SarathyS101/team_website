@@ -34,6 +34,14 @@ export default function Home() {
         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
           {project.name}
         </h1>
+        <a
+          href={site.repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-block text-sm font-medium text-accent-strong hover:underline"
+        >
+          View the frontend prototype &rarr;
+        </a>
         <p className="mt-4 max-w-2xl text-lg text-muted">{project.elevatorPitch}</p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a

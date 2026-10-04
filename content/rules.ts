@@ -44,6 +44,31 @@ export const rules: readonly Rule[] = [
       "Any decision that affects the team gets written into the meeting journal on this site the same day, so it does not get relitigated later.",
   },
   {
+    title: "Follow Gitflow and enforce checks with hooks",
+    detail:
+      "We use the Gitflow branching workflow. Pre-commit hooks check commit message style and code formatting (linting) on every commit, so broken style never reaches a pull request.",
+  },
+  {
+    title: "Small commits in Conventional Commits style",
+    detail:
+      "Each commit covers one task and follows the Conventional Commits format. We never commit secrets such as API keys or passwords.",
+  },
+  {
+    title: "Track work on a Kanban board",
+    detail:
+      "Every task lives on our Kanban board (GitHub Projects) and moves through To Do, In Progress, Review, and Done, so anyone can see what is blocked.",
+  },
+  {
+    title: "Weekly progress report",
+    detail:
+      "Every week, by 11:59 PM the day before our TA meeting slot, we post Progress, Plans, and Problems on this site, including what we tried and failed at, and email the TA the link.",
+  },
+  {
+    title: "Use AI tools, and review what they produce",
+    detail:
+      "We use AI tools for coding help, but review every suggestion instead of copy-pasting it. Written deliverables get significant human revision, and no sensitive information goes into an AI tool.",
+  },
+  {
     title: "Respect client confidentiality",
     detail:
       "Nothing the client shares in confidence — data, documents, screenshots, credentials, participant information — appears on this public site, in the public repository, or in any public channel.",

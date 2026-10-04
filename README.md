@@ -1,4 +1,4 @@
-# COMP 523 Team Website
+# [COMP 523 Team Website](https://teamc-alpha.vercel.app/)
 
 Public team website for COMP 523 at UNC Chapel Hill. Built with Next.js (App
 Router) and Tailwind CSS, deployed on Vercel.
