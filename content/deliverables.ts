@@ -19,7 +19,7 @@ export type Deliverable = {
   /** ISO format: YYYY-MM-DD. */
   dueDate: string;
   status: DeliverableStatus;
-  /** Public URL to the artifact. Omit until it exists. */
+  /** Public URL to the artifact, or a site path such as "/specifications". Omit until it exists. */
   href?: string;
   note?: string;
 };
@@ -41,7 +41,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "D1. Specifications",
     dueDate: "2026-09-19",
     status: "In progress",
-    note: "Functional requirements (lens system builder, aberration analysis, spot diagrams, optimization), non-functional requirements (URPS+: usable without writing code, fast feedback since LieOptics is 600-1000x faster than ray tracing, maintainable by the client after hand-off), and interface requirements (form/canvas builder, results views), prioritized Definite / Perhaps / Improbable. Draft started; not yet written up as a standalone document.",
+    href: "/specifications",
+    note: "User stories plus functional, non-functional (URPS+), and interface requirements, each labeled Definite, Perhaps, or Improbable.",
   },
   {
     name: "Team rules and coding practices",
@@ -53,25 +54,29 @@ export const deliverables: readonly Deliverable[] = [
     name: "User stories",
     dueDate: "2026-09-26",
     status: "In progress",
-    note: "Draft stories: as an optics researcher, I want to define a multi-element lens system without writing code; as a student, I want to see aberration coefficients and a spot diagram for my design; as a researcher, I want to run an optimization over lens parameters and see the result. Still to write: acceptance criteria for each.",
+    href: "/specifications",
+    note: "Five stories drafted with acceptance criteria; part of the Specifications document.",
   },
   {
     name: "Platform selection",
     dueDate: "2026-09-26",
     status: "In progress",
-    note: "Leaning TypeScript + React + Electron for the UI, talking to the existing Python LieOptics backend through a thin API layer, so the client's computational code is not modified. Alternatives being weighed: a pure web app (no desktop install, but no native file access) vs. Electron (desktop packaging, works offline); a Python-native GUI (PyQt/Tkinter) was considered and set aside since the team's stronger skill set is web, not desktop Python GUI frameworks. Pros/cons write-up not finished.",
+    href: "/platform-selection",
+    note: "Alternatives and final choices for language, frontend, shell, backend bridge, visualization, and hardware/OS, with pros, cons, and justification.",
   },
   {
     name: "Architecture diagram",
     dueDate: "2026-09-30",
     status: "In progress",
-    note: "Client-server-style diagram: Electron/React UI (ours) on one side, a thin API layer (ours) in the middle, and the existing LieOptics Python package (the client's, unmodified) on the other side. Still need to add the diagram image/file itself to the site.",
+    href: "/architecture-diagram",
+    note: "Electron/React UI (ours), a thin API layer (ours), and the client's unmodified LieOptics package.",
   },
   {
     name: "System metaphor",
     dueDate: "2026-09-30",
     status: "Not started",
-    note: "Working idea: the app as an optical bench, where each lens element is a physical component you place and adjust, and the results panel is the measurement equipment reading off the bench. Not written up yet.",
+    href: "/system-metaphor",
+    note: "The app as an optical bench, with code names that follow the metaphor.",
   },
   {
     name: "Week 2: frontend scaffold + mock prototype",
@@ -84,7 +89,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "Midterm talk",
     dueDate: "2026-10-05",
     status: "Not started",
-    note: "Midterm talks run 10/5 to 10/12. Plan to show the frontend prototype (lens builder through mock results) and the platform/architecture decisions.",
+    href: "/midterm-plan",
+    note: "Talks run 10/5, 10/7, and 10/12 in random order; slides only, no demo. Covers functional overview, UI mockup, system metaphor, architecture, and platform.",
   },
   {
     name: "Week 3: lens builder wired to real backend",
@@ -96,6 +102,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "D2. Design document",
     dueDate: "2026-10-20",
     status: "Not started",
+    href: "/design-document",
+    note: "Expanded architecture diagram, code repository, data definitions, and design rationale including rejected approaches.",
   },
   {
     name: "Midpoint demo",

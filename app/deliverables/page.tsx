@@ -57,8 +57,9 @@ export default function DeliverablesPage() {
               <a
                 key={`${item.name}-link`}
                 href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(item.href.startsWith("/")
+                  ? {}
+                  : { target: "_blank", rel: "noopener noreferrer" })}
                 className="text-accent-strong hover:underline"
               >
                 View
