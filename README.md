@@ -37,6 +37,7 @@ marked `○ (Static)` in the output.
 | 6. Journal of Meetings and Decisions | `content/journal.ts` |
 | 7. Related Links | `content/links.ts` |
 | 8. Deliverables Repository | `content/deliverables.ts` |
+| Assignments (links to written work) | `content/assignments.ts` |
 | Team name, semester, repo URL, "last updated" | `content/site.ts` |
 
 Everything is a plain typed TypeScript object. You never need to touch a React
@@ -103,6 +104,7 @@ app/                 Routes. Thin renderers over content/ — no data lives here
   journal/page.tsx   Meeting journal, sorted newest first
   links/page.tsx     Related links
   deliverables/page.tsx
+  assignments/page.tsx  Written assignments; PDFs live in public/assignments/
 components/          Presentational only: Header, Footer, Section, Card, DataTable
 content/             ALL site content. This is what the team edits.
 lib/format.ts        teamMailto(), formatDate(), date sorting helpers

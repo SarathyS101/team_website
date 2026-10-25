@@ -7,7 +7,7 @@ import { teamMailto } from "@/lib/format";
 
 /**
  * Every required section is reachable from here in one click: the five
- * "always needed" items are anchors on the home page, the three growing
+ * "always needed" items are anchors on the home page, the four growing
  * lists are their own pages.
  */
 const navItems = [
@@ -19,6 +19,7 @@ const navItems = [
   { label: "Journal", href: "/journal" },
   { label: "Links", href: "/links" },
   { label: "Deliverables", href: "/deliverables" },
+  { label: "Assignments", href: "/assignments" },
 ];
 
 export function Header() {
