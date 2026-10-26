@@ -85,11 +85,22 @@ hand-off, planned here now):
 Recorded in Zoom (talk-to-camera + screen share), linked from the team website's Links page and
 emailed directly to the client at hand-off time, alongside this document.
 
+Owner: Sushant Potu (packaging/install video, since he built that path) and Lakshin Ganesha or
+Avi Patel (usage video, since they built the UI being demonstrated).
+
+## Our post-hand-off point of contact
+
+Sarathy Selvam, as the team's original client contact (ran the 9/17 and subsequent client
+meetings), is the point of contact if the client needs help after the project ends. TODO:
+confirm this with the full team before the hand-off email goes out.
+
 ## Delivery checklist (executed at the end of the semester)
 
-- [ ] Final code merged to `main` on the client's repository.
+- [ ] Final code merged to `main` on the client's repository. Owner: Sarathy Selvam (bridge/
+      repo owner on our side).
 - [ ] A tagged release (`vX.Y.Z`) built via `.github/workflows/release.yml`, producing signed-or-
-      not installers for Windows x64, macOS arm64, and macOS x64.
+      not installers for Windows x64, macOS arm64, and macOS x64. Owner: Sushant Potu (built the
+      release workflow).
 - [ ] Hand-off videos recorded and linked on the team website.
 - [ ] This document (in non-technical form) emailed to the client along with the video links.
 - [ ] Optional: in-person or Zoom hand-off appointment to install on the client's machine.
