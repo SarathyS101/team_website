@@ -63,6 +63,20 @@ Python/Node setup, since the packaged app bundles its own frozen Python engine
 - **Delivery**: a `docs/adminGuide.md` / install section of the GitHub Release notes, plus the
   hand-off document (see that plan) covers the client-specific version of this.
 
+### Ownership and status
+
+Neither `docs/userGuide.md`, `docs/adminGuide.md`, nor the videos exist yet — this plan commits
+to writing/recording them, not that they're done. Draft owners, based on who built the matching
+part of the app (so the person writing a section already knows it first-hand):
+
+| Document | Owner | Draws on |
+|---|---|---|
+| `docs/userGuide.md` + the two end-user videos | Avi Patel (builder UI) and Lakshin Ganesha (visualization/results UI) | Phases B/C and D |
+| `docs/adminGuide.md` + install video | Sushant Potu (packaging/CI/release) | Phase E |
+
+Target: drafted well before client acceptance testing (11/17), so there's time to refine them
+from client feedback before the final hand-off (12/5).
+
 ### Future engineer
 
 Out of scope for this plan — the course treats this as a separate technical/architecture
