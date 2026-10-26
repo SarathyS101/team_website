@@ -111,16 +111,30 @@ Intel) on tag push, which is itself a test that packaging succeeds on every supp
 
 ### Who tests, and when
 
-- Whoever owns a change to `bridge/` runs `python -m pytest bridge/tests -q` locally before
-  opening a PR; CI re-runs it on all three OS targets on push.
-- Whoever owns a change to `desktop/src/` runs `npm run typecheck && npm test` locally before
-  opening a PR, plus a manual pass through all four visualization tabs against a live bridge.
-- Whoever owns a packaging change runs `npm run smoke:engine` and `npm run smoke:app` locally
-  before tagging a release; the release workflow re-verifies by actually building installers.
-- This happens continuously, tied to the weekly PPP cadence, not as a single end-of-semester
-  event.
-- **Client acceptance testing**: the client (Haosheng Shi) tests the packaged installer against
-  the agreed workflow, scheduled around the course's client acceptance testing date (11/17).
+Based on actual ownership so far (by commit history, not the original phase assignment —
+responsibilities shifted as the project moved):
+
+| Area | Primary owner | Runs |
+|---|---|---|
+| Bridge core (`bridge/`, domain models, FastAPI server, analysis, optimization supervisor) | Sarathy Selvam | `python -m pytest bridge/tests -q` before every PR |
+| State store and lens builder UI (`desktop/src/store`, `desktop/src/components/builder`) | Avi Patel | `npm run typecheck && npm test` before every PR |
+| Visualization workspace (`desktop/src/components/visualization`: aberrations, spot diagram, layout, optimization bench, export) | Lakshin Ganesha | `npm run typecheck && npm test`, plus a manual pass through all four tabs against a live bridge, before every PR |
+| Packaging, CI/release workflows, and cross-cutting hardening (input validation, bug fixes across bridge and desktop) | Sushant Potu | `npm run smoke:engine` and `npm run smoke:app` before tagging a release; also runs the full suite when reviewing another member's PR |
+
+Every PR, regardless of area, is re-verified by `.github/workflows/ci.yml` on all three OS
+targets before merge — this is the independent check that a change actually works outside the
+author's own machine. For example, the optimization convergence-streaming bug found during
+Phase D integration testing (callbacks defined but never wired to the optimizer) was caught
+this way, reported, and fixed by Sushant Potu in `c8d9ab5` the next day; the layout SVG export
+and aberration-order-filter bugs were caught and fixed the same way in `20f546c`.
+
+This happens continuously, tied to the weekly PPP cadence on the team website, not as a single
+end-of-semester event.
+
+**Client acceptance testing**: the client (Haosheng Shi) tests the packaged installer against
+the workflow agreed on 9/17 (define a lens system, run analysis, view results, run
+optimization), scheduled around the course's client acceptance testing date (11/17). TODO: lock
+in the exact date/time with the client once a release build is ready.
 
 ### Error conditions and data-specific test cases
 
