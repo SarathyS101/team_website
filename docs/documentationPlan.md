@@ -65,17 +65,23 @@ Python/Node setup, since the packaged app bundles its own frozen Python engine
 
 ### Ownership and status
 
-Neither `docs/userGuide.md`, `docs/adminGuide.md`, nor the videos exist yet — this plan commits
-to writing/recording them, not that they're done. Draft owners, based on who built the matching
-part of the app (so the person writing a section already knows it first-hand):
+`docs/userGuide.md` and `docs/adminGuide.md` are written (see this repo) and cover the app as
+it exists today. The videos are not recorded yet — a screen recording can't be produced in
+advance of the UI it demonstrates. Owners, based on who built the matching part of the app (so
+the person writing/recording a section already knows it first-hand):
 
-| Document | Owner | Draws on |
-|---|---|---|
-| `docs/userGuide.md` + the two end-user videos | Avi Patel (builder UI) and Lakshin Ganesha (visualization/results UI) | Phases B/C and D |
-| `docs/adminGuide.md` + install video | Sushant Potu (packaging/CI/release) | Phase E |
+| Document | Owner | Status | Draws on |
+|---|---|---|---|
+| `docs/userGuide.md` | Avi Patel and Lakshin Ganesha | Written | Phases B/C and D |
+| `docs/adminGuide.md` | Sushant Potu | Written | Phase E |
+| End-user videos (2) | Avi Patel / Lakshin Ganesha | Not recorded | Phases B/C and D |
+| Install video | Sushant Potu | Not recorded | Phase E |
 
-Target: drafted well before client acceptance testing (11/17), so there's time to refine them
-from client feedback before the final hand-off (12/5).
+Both guides will need a re-read before the final hand-off, since the UI and packaging will keep
+changing until then — treat them as living documents, not one-time deliverables.
+
+Target: videos recorded well before client acceptance testing (11/17), so there's time to
+refine everything from client feedback before the final hand-off (12/5).
 
 ### Future engineer
 
