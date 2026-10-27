@@ -21,5 +21,5 @@ export const site = {
   frontendUrl: "https://lieoptics-frontend.vercel.app",
 
   /** Bump this whenever you update the site. The footer shows it. */
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-10-27",
 } as const;

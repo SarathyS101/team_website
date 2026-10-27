@@ -118,6 +118,13 @@ export const deliverables: readonly Deliverable[] = [
     status: "Not started",
   },
   {
+    name: "Tech Talk",
+    dueDate: "2026-10-27",
+    status: "Submitted",
+    href: "https://adminliveunc-my.sharepoint.com/:p:/g/personal/sarathy_ad_unc_edu/IQBz6OhwOFaaQIAh2az7QgZNAQGFhKCfp5oHiVUlQynRSZY?e=aHQg4p",
+    note: "Presentation slide deck.",
+  },
+  {
     name: "Weeks 5-6: layout visualization, save/load, error handling",
     dueDate: "2026-11-08",
     status: "Not started",
