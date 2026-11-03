@@ -139,8 +139,16 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "D3. Test plan",
     dueDate: "2026-11-10",
-    status: "Not started",
-    note: "TODO: date is the team's internal target; confirm against the course page.",
+    status: "Submitted",
+    href: "https://github.com/SarathyS101/team_website/blob/docs/test-doc-handoff-plans/docs/testPlan.md",
+    note: "Two-part plan (ideal vs. actual): the real pytest/Vitest suites, CI workflow, packaging smoke tests, environments, test ownership, and error cases. TODO: date is the team's internal target; confirm against the course page.",
+  },
+  {
+    name: "Documentation plan",
+    dueDate: "2026-11-10",
+    status: "Submitted",
+    href: "https://github.com/SarathyS101/team_website/blob/docs/test-doc-handoff-plans/docs/documentationPlan.md",
+    note: "Internal planning document for the instructor/coach, not for the client. User types, drafted user and administrator documentation content, and the video plan.",
   },
   {
     name: "Client acceptance testing",
@@ -151,13 +159,14 @@ export const deliverables: readonly Deliverable[] = [
     name: "D4. User manual",
     dueDate: "2026-11-30",
     status: "Not started",
-    note: "TODO: date is the team's internal target; confirm against the course page.",
+    note: "TODO: date is the team's internal target; confirm against the course page. A draft already exists inside the documentation plan; this is the expanded, standalone version shipped with D5.",
   },
   {
     name: "Client hand-off plan",
     dueDate: "2026-11-30",
-    status: "Not started",
-    note: "TODO: date is the team's internal target; confirm against the course page.",
+    status: "Submitted",
+    href: "https://github.com/SarathyS101/team_website/blob/docs/test-doc-handoff-plans/docs/clientHandoffPlan.md",
+    note: "Internal planning document for the instructor/coach, not for the client. How the client obtains, installs, and runs the packaged app, costs, and the hand-off video plan. TODO: date is the team's internal target; confirm against the course page.",
   },
   {
     name: "Weeks 9-10: packaging and final polish",
