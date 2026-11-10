@@ -131,12 +131,6 @@ export const deliverables: readonly Deliverable[] = [
     note: "Done: lens cross-section with traced rays, interactive spot diagram, save/load of lens files, and clear error messages for invalid input or failed optimization.",
   },
   {
-    name: "Week 7: optimization UI, phase-space plots, tests",
-    dueDate: "2026-11-15",
-    status: "Submitted",
-    note: "Done: optimization controls with a live convergence chart and cancel, aberration tables, and automated tests (bridge, numerical regression, UI) running in CI. Phase-space plots were not built.",
-  },
-  {
     name: "D3. Test plan",
     dueDate: "2026-11-10",
     status: "Submitted",
