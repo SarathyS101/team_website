@@ -36,7 +36,7 @@ export type JournalEntry = {
 /** Newest first is conventional here, but the page sorts regardless. */
 export const entries: readonly JournalEntry[] = [
   {
-    date: "2026-11-10",
+    date: "2026-11-05",
     type: "Client",
     title: "Client Meeting with Haosheng Shi: Progress Review & UI Feedback",
     attendees: [
