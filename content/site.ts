@@ -17,9 +17,6 @@ export const site = {
   /** Public code repository for the project (the frontend, not this website). */
   repoUrl: "https://github.com/LakshinG/lieopitcs-Frontend",
 
-  /** The frontend prototype itself, running live (not just its source). */
-  frontendUrl: "https://lieoptics-frontend.vercel.app",
-
   /** Bump this whenever you update the site. The footer shows it. */
   lastUpdated: "2026-11-10",
 } as const;

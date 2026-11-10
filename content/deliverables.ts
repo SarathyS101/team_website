@@ -83,8 +83,7 @@ export const deliverables: readonly Deliverable[] = [
     name: "Week 2: frontend scaffold + mock prototype",
     dueDate: "2026-10-11",
     status: "Submitted",
-    href: "https://lieoptics-frontend.vercel.app",
-    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. Try it live at the link above, or see the source at github.com/LakshinG/lieopitcs-Frontend. Electron packaging and the real LieOptics backend connection are still to do.",
+    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. This early prototype has since been replaced by the Electron app connected to the real LieOptics backend.",
   },
   {
     name: "Midterm talk",
