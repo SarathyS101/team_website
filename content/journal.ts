@@ -36,6 +36,32 @@ export type JournalEntry = {
 /** Newest first is conventional here, but the page sorts regardless. */
 export const entries: readonly JournalEntry[] = [
   {
+    date: "2026-11-10",
+    type: "Client",
+    title: "Client Meeting with Haosheng Shi: Progress Review & UI Feedback",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Haosheng Shi",
+    ],
+    topics: [
+      "Met with client Haosheng Shi to demo current application progress and review features.",
+      "Discussed overall system functionality and interface design ahead of upcoming acceptance testing.",
+    ],
+    decisions: [
+      "Client confirmed everything is looking good and approved the current progress.",
+      "Agreed to implement minor UI changes and refinements based on client feedback.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Implement the requested UI changes and refinements.",
+      },
+    ],
+  },
+  {
     date: "2026-10-01",
     type: "Team",
     title: "Week 1: project setup and a first frontend prototype",
