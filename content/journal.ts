@@ -36,6 +36,42 @@ export type JournalEntry = {
 /** Newest first is conventional here, but the page sorts regardless. */
 export const entries: readonly JournalEntry[] = [
   {
+    date: "2026-10-15",
+    type: "Client",
+    title: "Client Meeting: Frontend layout and remaining features",
+    attendees: ["Haosheng Shi", "Sushant Potu"],
+    topics: [
+      "Target layout is the SVG diagram the client sent: lens editor and system properties on the left, analysis at the top right, and optimization at the bottom right.",
+      "All panels live on a single page and may be movable or resizable; there is no need to open several files side by side.",
+      "The navigation bar was discussed but deprioritized; the client's markdown spec has the full navigation bar details if we need them later.",
+      "Walked through the \"must have\" feature list in the client's README: features 1-4 are confirmed implemented, the schematic front end is still to do, and the remaining items should be doable within about a week.",
+      "Timeline check: roughly halfway through the semester, with only two client meetings held so far.",
+    ],
+    decisions: [
+      "Match the client's SVG layout; the focus is functionality below the navigation bar.",
+      "Finish the frontend before Thanksgiving break (about a month). The client will finalize a near-final spec, and testing then runs until the end of the project.",
+      "Hold a weekly recurring client meeting on Wednesday or Thursday, with at least some team members attending each week.",
+    ],
+    actionItems: [
+      {
+        owner: "Haosheng Shi",
+        task: "Send the updated, near-final frontend spec by Monday 10/19.",
+      },
+      {
+        owner: "Haosheng Shi",
+        task: "Send a calendar hold for the weekly Wednesday/Thursday meeting through the end of the semester.",
+      },
+      {
+        owner: "Team",
+        task: "Pull the client's branch, test it locally, and send feedback by email or commit directly.",
+      },
+      {
+        owner: "Team",
+        task: "Implement the schematic front end and the remaining README features before Thanksgiving break.",
+      },
+    ],
+  },
+  {
     date: "2026-10-01",
     type: "Team",
     title: "Week 1: project setup and a first frontend prototype",
