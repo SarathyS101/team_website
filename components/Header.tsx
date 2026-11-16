@@ -6,13 +6,12 @@ import { site } from "@/content/site";
 import { teamMailto } from "@/lib/format";
 
 /**
- * Every required section is reachable from here in one click: the five
+ * Every required section is reachable from here in one click: the four
  * "always needed" items are anchors on the home page, the four growing
  * lists are their own pages.
  */
 const navItems = [
   { label: "Introduction", href: "/#intro" },
-  { label: "Roles", href: "/#roles" },
   { label: "Contact", href: "/#contact" },
   { label: "Schedule", href: "/#schedule" },
   { label: "Rules", href: "/#rules" },

@@ -36,6 +36,114 @@ export type JournalEntry = {
 /** Newest first is conventional here, but the page sorts regardless. */
 export const entries: readonly JournalEntry[] = [
   {
+    date: "2026-11-10",
+    type: "Manager",
+    title: "Mentor Meeting: Deliverables & Product Progress",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Faculty Mentor",
+    ],
+    topics: [
+      "Reviewed outstanding course deliverables and discussed priorities for bringing submissions up to date.",
+      "Demonstrated the current product and discussed implementation progress.",
+      "Reviewed communication with the client and discussed follow-up questions and feedback.",
+    ],
+    decisions: [
+      "Prioritize outstanding deliverables alongside continued product development.",
+      "Use client discussions and product demonstrations to guide upcoming work.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Update outstanding deliverables, prepare the next product demonstration, and follow up with the client.",
+      },
+    ],
+  },
+  {
+    date: "2026-11-03",
+    type: "Manager",
+    title: "Mentor Meeting: Submission Priorities & Client Communication",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Faculty Mentor",
+    ],
+    topics: [
+      "Assessed progress on course deliverables and discussed how to address remaining submission gaps.",
+      "Presented a demonstration of the application to review the team's development progress.",
+      "Discussed ongoing client communication and questions to address in the next conversation.",
+    ],
+    decisions: [
+      "Keep outstanding submissions a priority while advancing the application.",
+      "Maintain regular client communication to align product work with expectations.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Bring deliverables up to date, refine the product demonstration, and prepare questions for the client.",
+      },
+    ],
+  },
+  {
+    date: "2026-10-27",
+    type: "Manager",
+    title: "Mentor Meeting: Deliverable Review & Product Demonstration",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Faculty Mentor",
+    ],
+    topics: [
+      "Reviewed the status of required deliverables and discussed work needed to catch up on submissions.",
+      "Demonstrated current product functionality and discussed progress on the application.",
+      "Discussed client conversations and how to incorporate feedback into upcoming work.",
+    ],
+    decisions: [
+      "Address outstanding deliverables while continuing to demonstrate product progress.",
+      "Keep development priorities aligned with feedback from the client.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Complete outstanding submission updates, continue product development, and follow up on client feedback.",
+      },
+    ],
+  },
+  {
+    date: "2026-10-20",
+    type: "Manager",
+    title: "Mentor Meeting: Deliverable Planning & Client Alignment",
+    attendees: [
+      "Sarathy Selvam",
+      "Avi Patel",
+      "Lakshin Ganesha",
+      "Sushant Potu",
+      "Faculty Mentor",
+    ],
+    topics: [
+      "Discussed outstanding course deliverables and priorities for getting submissions back on track.",
+      "Walked through the current product in a demonstration and reviewed development progress.",
+      "Discussed communication with the client to clarify expectations and next steps.",
+    ],
+    decisions: [
+      "Focus on bringing required deliverables up to date alongside product development.",
+      "Continue discussing product progress with the client to guide the next steps.",
+    ],
+    actionItems: [
+      {
+        owner: "All team members",
+        task: "Advance outstanding deliverables, prepare an updated demonstration, and continue client discussions.",
+      },
+    ],
+  },
+  {
     date: "2026-11-05",
     type: "Client",
     title: "Client Meeting with Haosheng Shi: Progress Review & UI Feedback",

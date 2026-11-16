@@ -4,15 +4,10 @@ import { Badge, Card } from "@/components/Card";
 import { DataTable } from "@/components/DataTable";
 import { site } from "@/content/site";
 import { project } from "@/content/project";
-import { client, consultants, members } from "@/content/team";
-import { keyEvents, recurringMeetings } from "@/content/schedule";
+import { client, instructors, instructorsSection, members } from "@/content/team";
+import { recurringMeetings, scheduleLead } from "@/content/schedule";
 import { rules } from "@/content/rules";
-import {
-  byDateAscending,
-  formatDate,
-  teamEmailList,
-  teamMailto,
-} from "@/lib/format";
+import { teamEmailList, teamMailto } from "@/lib/format";
 
 /**
  * This page is fully prerendered at build time. There is no API route, form,
@@ -90,54 +85,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* ---------------- 2. Team Roles ---------------- */}
-      <Section
-        id="roles"
-        title="Team roles"
-        lead="Every member writes code. These roles mark where each person carries additional responsibility."
-      >
-        <div className="grid gap-4 sm:grid-cols-2">
-          {members.map((member, index) => (
-            <Card key={index}>
-              <div className="flex flex-wrap items-center gap-2">
-                <h3 className="font-semibold">{member.name}</h3>
-                <Badge>{member.role}</Badge>
-                {member.alsoRole?.map((role, roleIndex) => (
-                  <Badge key={roleIndex} tone="neutral">
-                    {role}
-                  </Badge>
-                ))}
-              </div>
-              <ul className="mt-3 space-y-1.5 text-sm text-muted">
-                {member.responsibilities.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex gap-2">
-                    <span aria-hidden="true" className="text-accent">
-                      —
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-3 flex flex-wrap gap-x-4 text-sm">
-                <a href={`mailto:${member.email}`} className="text-accent-strong hover:underline">
-                  {member.email}
-                </a>
-                {member.github ? (
-                  <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted hover:text-foreground"
-                  >
-                    GitHub
-                  </a>
-                ) : null}
-              </p>
-            </Card>
-          ))}
-        </div>
-      </Section>
-
       {/* ---------------- 3. Contact Information ---------------- */}
       <Section
         id="contact"
@@ -197,13 +144,13 @@ export default function Home() {
           ]}
         />
 
-        {consultants.length > 0 ? (
+        {instructors.length > 0 ? (
           <>
-            <h3 className="mt-8 mb-3 font-semibold">Consultants and instructors</h3>
+            <h3 className="mt-8 mb-3 font-semibold">{instructorsSection.title}</h3>
             <DataTable
-              caption="Consultant and instructor contact information"
+              caption={instructorsSection.caption}
               headers={["Name", "Title", "Organization", "Email"]}
-              rows={consultants.map((person) => [
+              rows={instructors.map((person) => [
                 person.name,
                 person.title,
                 person.organization,
@@ -228,7 +175,7 @@ export default function Home() {
       <Section
         id="schedule"
         title="Schedule"
-        lead="Regular meetings with the team, the client, and the faculty manager, plus the dates that matter most this semester."
+        lead={scheduleLead}
       >
         <DataTable
           caption="Schedule of regular meetings"
@@ -241,23 +188,6 @@ export default function Home() {
             meeting.cadence,
             meeting.time,
             meeting.location,
-          ])}
-        />
-
-        <h3 className="mt-8 mb-3 font-semibold">Key dates</h3>
-        <DataTable
-          caption="Demos, acceptance testing, and other major events"
-          headers={["Date", "Event"]}
-          rows={byDateAscending(keyEvents).map((event) => [
-            <span key={event.date} className="whitespace-nowrap">
-              {formatDate(event.date)}
-            </span>,
-            <div key={event.what}>
-              <span className="font-medium">{event.what}</span>
-              {event.detail ? (
-                <p className="mt-0.5 text-muted">{event.detail}</p>
-              ) : null}
-            </div>,
           ])}
         />
       </Section>

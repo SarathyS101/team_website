@@ -37,7 +37,7 @@ export const deliverables: readonly Deliverable[] = [
     dueDate: "2026-09-05",
     status: "Submitted",
     href: "https://teamc-alpha.vercel.app/",
-    note: "Introduction, roles, contacts, schedule, team rules, journal, deliverables, and links are posted and kept current every week, per the TA's weekly reporting requirement. This is a living deliverable: it keeps being updated all semester, not a one-time submission.",
+    note: "Introduction, contacts, schedule, team rules, journal, deliverables, and links are posted and kept current every week, per the TA's weekly reporting requirement. This is a living deliverable: it keeps being updated all semester, not a one-time submission.",
   },
   {
     name: "D1. Specifications",

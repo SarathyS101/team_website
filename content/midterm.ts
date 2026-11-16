@@ -64,7 +64,7 @@ export const slideBlocks: readonly SlideBlock[] = [
       "Team members and their roles.",
       "Client: Haosheng Shi, LieOptics.",
     ],
-    source: { label: "Team and contacts", href: "/#roles" },
+    source: { label: "Team and contacts", href: "/#contact" },
     speaker: "Sushant Potu",
     minutes: 0.5,
   },

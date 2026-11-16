@@ -1,8 +1,7 @@
 /**
  * PUBLIC WEBSITE — see the note in content/site.ts before adding anything here.
  *
- * REQUIREMENT 2: Team Roles.
- * REQUIREMENT 3: Contact Information (team, client, consultants).
+ * REQUIREMENT 3: Contact Information (team, client, instructors).
  *
  * The "Email the Team" button everywhere on this site is generated from the
  * `email` fields below, so keep them accurate and you never have to touch a
@@ -16,6 +15,7 @@
 /** Add to this union if your team invents a role. Typos will fail the build. */
 export type Role =
   | "Software Engineer"
+  | "Software Engineer, Tech Lead"
   | "Project Manager"
   | "Tech Lead"
   | "Design Lead"
@@ -51,7 +51,7 @@ export type Contact = {
 export const members: readonly TeamMember[] = [
   {
     name: "Sarathy Selvam",
-    role: "Software Engineer",
+    role: "Software Engineer, Tech Lead",
     responsibilities: [
       "TBD",
     ],
@@ -94,8 +94,12 @@ export const client: Contact = {
   organization: "LieOptics",
 };
 
-/** Instructors, mentors, domain experts. TODO: replace or empty this array. */
-export const consultants: readonly Contact[] = [
+export const instructorsSection = {
+  title: "Instructors",
+  caption: "Instructor contact information",
+} as const;
+
+export const instructors: readonly Contact[] = [
   {
     name: "Paul Stotts",
     title: "Instructor, COMP 523",
@@ -103,9 +107,9 @@ export const consultants: readonly Contact[] = [
     email: "stotts@cs.unc.edu",
   },
   {
-    name: "TODO: Manager Name",
-    title: "Faculty Manager",
+    name: "Louie Lu",
+    title: "Teaching Assistant",
     organization: "UNC Department of Computer Science",
-    email: "todo@cs.unc.edu",
+    email: "louielu@cs.unc.edu",
   },
 ];

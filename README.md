@@ -30,8 +30,8 @@ marked `○ (Static)` in the output.
 | Required item | File to edit |
 | --- | --- |
 | 1. Project Introduction | `content/project.ts` |
-| 2. Team Roles | `content/team.ts` (`members`) |
-| 3. Contact Information | `content/team.ts` (`members`, `client`, `consultants`) |
+| Team roles in contact information | `content/team.ts` (`members`) |
+| 3. Contact Information | `content/team.ts` (`members`, `client`, `instructors`) |
 | 4. Schedule of Regular Meetings | `content/schedule.ts` |
 | 5. Team Rules | `content/rules.ts` |
 | 6. Journal of Meetings and Decisions | `content/journal.ts` |
@@ -100,7 +100,7 @@ npm run start    # serve the production build locally
 
 ```
 app/                 Routes. Thin renderers over content/ — no data lives here.
-  page.tsx           Home: introduction, roles, contact, schedule, rules
+  page.tsx           Home: introduction, contact, schedule, rules
   journal/page.tsx   Meeting journal, sorted newest first
   links/page.tsx     Related links
   deliverables/page.tsx
@@ -110,7 +110,7 @@ content/             ALL site content. This is what the team edits.
 lib/format.ts        teamMailto(), formatDate(), date sorting helpers
 ```
 
-The site is deliberately shallow: the five standing sections are anchors on the
+The site is deliberately shallow: the four standing sections are anchors on the
 home page, and the three growing lists are one click away in the header, so
 nothing is more than one click from anywhere.
 
