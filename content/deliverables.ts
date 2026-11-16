@@ -12,6 +12,8 @@
  * only artifacts that are safe to publish.
  */
 
+import { site } from "@/content/site";
+
 export type DeliverableStatus = "Not started" | "In progress" | "Submitted";
 
 export type Deliverable = {
@@ -40,7 +42,7 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "D1. Specifications",
     dueDate: "2026-09-19",
-    status: "In progress",
+    status: "Submitted",
     href: "/specifications",
     note: "User stories plus functional, non-functional (URPS+), and interface requirements, each labeled Definite, Perhaps, or Improbable.",
   },
@@ -54,55 +56,42 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "User stories",
     dueDate: "2026-09-26",
-    status: "In progress",
+    status: "Submitted",
     href: "/specifications",
     note: "Five stories drafted with acceptance criteria; part of the Specifications document.",
   },
   {
     name: "Platform selection",
     dueDate: "2026-09-26",
-    status: "In progress",
+    status: "Submitted",
     href: "/platform-selection",
     note: "Alternatives and final choices for language, frontend, shell, backend bridge, visualization, and hardware/OS, with pros, cons, and justification.",
   },
   {
     name: "Architecture diagram",
     dueDate: "2026-09-30",
-    status: "In progress",
+    status: "Submitted",
     href: "/architecture-diagram",
     note: "Electron/React UI (ours), a thin API layer (ours), and the client's unmodified LieOptics package.",
   },
   {
     name: "System metaphor",
     dueDate: "2026-09-30",
-    status: "Not started",
+    status: "Submitted",
     href: "/system-metaphor",
     note: "The app as an optical bench, with code names that follow the metaphor.",
   },
   {
-    name: "Week 2: frontend scaffold + mock prototype",
-    dueDate: "2026-10-11",
-    status: "Submitted",
-    href: "https://lieoptics-frontend.vercel.app",
-    note: "Ahead of schedule: a Vite + React + TypeScript app is up with a lens-system builder form, a layout sketch, an aberration coefficient table, a spot diagram (3 field angles), and a mock optimization run, all behind a typed API interface so the real backend can be swapped in later. Try it live at the link above, or see the source at github.com/LakshinG/lieopitcs-Frontend. Electron packaging and the real LieOptics backend connection are still to do.",
-  },
-  {
     name: "Midterm talk",
     dueDate: "2026-10-05",
-    status: "Not started",
+    status: "Submitted",
     href: "/midterm-plan",
     note: "Talks run 10/5, 10/7, and 10/12 in random order; slides only, no demo. Covers functional overview, UI mockup, system metaphor, architecture, and platform.",
   },
   {
-    name: "Week 3: lens builder wired to real backend",
-    dueDate: "2026-10-18",
-    status: "Not started",
-    note: "Replace the mock API with a thin service (or Electron child process) calling the real LieOptics Python package (OpticalSystemSpec, LensOptimizer, SpotDiagram), so results shown in the UI are real, not placeholder.",
-  },
-  {
     name: "D2. Design document",
     dueDate: "2026-10-20",
-    status: "Not started",
+    status: "Submitted",
     href: "/design-document",
     note: "Expanded architecture diagram, code repository, data definitions, and design rationale including rejected approaches.",
   },
@@ -121,20 +110,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "Tech Talk",
     dueDate: "2026-10-27",
     status: "Submitted",
-    href: "https://adminliveunc-my.sharepoint.com/:p:/g/personal/sarathy_ad_unc_edu/IQBz6OhwOFaaQIAh2az7QgZNAQGFhKCfp5oHiVUlQynRSZY?e=aHQg4p",
+    href: "https://drive.google.com/file/d/13N5UOC_FpxV7DHeY76UqVce7zwWqsdSP/view?usp=sharing",
     note: "Presentation slide deck.",
-  },
-  {
-    name: "Weeks 5-6: layout visualization, save/load, error handling",
-    dueDate: "2026-11-08",
-    status: "Not started",
-    note: "Canvas-based lens visualization beyond the current sketch, saving and loading lens systems reliably, and surfacing backend errors (invalid parameters, failed optimization) in the UI instead of failing silently.",
-  },
-  {
-    name: "Week 7: optimization UI, phase-space plots, tests",
-    dueDate: "2026-11-15",
-    status: "Not started",
-    note: "Real differential-evolution optimization controls (bounds, constraints, progress), phase-space plots, and the start of an automated test suite feeding into the test plan below.",
   },
   {
     name: "D3. Test plan",
@@ -169,16 +146,10 @@ export const deliverables: readonly Deliverable[] = [
     note: "Internal planning document for the instructor/coach, not for the client. How the client obtains, installs, and runs the packaged app, costs, and the hand-off video plan. TODO: date is the team's internal target; confirm against the course page.",
   },
   {
-    name: "Weeks 9-10: packaging and final polish",
-    dueDate: "2026-12-05",
-    status: "Not started",
-    note: "Electron installers for the target platforms, folding in client acceptance-testing feedback, and final presentation prep.",
-  },
-  {
     name: "D5. Code and final presentation",
     dueDate: "2026-12-05",
-    status: "In progress",
-    href: "https://lieoptics-frontend.vercel.app",
-    note: "Live prototype above; source at github.com/LakshinG/lieopitcs-Frontend. A mock-data UI is up (builder, aberration table, spot diagram, mock optimization); the real LieOptics backend is not wired in yet, and Electron packaging has not started.",
+    status: "Submitted",
+    href: site.repoUrl,
+    note: "LieOptics project source code.",
   },
 ];

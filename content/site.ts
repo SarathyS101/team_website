@@ -14,12 +14,9 @@ export const site = {
   /** Short line under the site title. */
   tagline: "Cross-platform interactive GUI for analytical optical lens design and aberration analysis.",
 
-  /** Public code repository for the project (the frontend, not this website). */
-  repoUrl: "https://github.com/LakshinG/lieopitcs-Frontend",
-
-  /** The frontend prototype itself, running live (not just its source). */
-  frontendUrl: "https://lieoptics-frontend.vercel.app",
+  /** Public code repository for LieOptics. */
+  repoUrl: "https://github.com/hausenshi/LieOptics",
 
   /** Bump this whenever you update the site. The footer shows it. */
-  lastUpdated: "2026-11-10",
+  lastUpdated: "2026-11-16",
 } as const;
