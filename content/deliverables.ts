@@ -98,7 +98,8 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "Midpoint demo",
     dueDate: "2026-10-20",
-    status: "Not started",
+    status: "Submitted",
+    href: "https://drive.google.com/file/d/1bQO5F36onk1v4OBe9n9sdrWcnMug5Z4J/view?usp=sharing",
     note: "Goal: lens definition through real aberration coefficients and a real spot diagram, end to end, using the real LieOptics backend rather than the current mock.",
   },
   {
