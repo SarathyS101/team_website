@@ -104,7 +104,8 @@ export const deliverables: readonly Deliverable[] = [
   {
     name: "Ethics assignment",
     dueDate: "2026-10-21",
-    status: "Not started",
+    status: "Submitted",
+    href: "/assignments/ethics-1-team-conclusions.pdf",
   },
   {
     name: "Tech Talk",

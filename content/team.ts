@@ -91,7 +91,8 @@ export const members: readonly TeamMember[] = [
 export const client: Contact = {
   name: "Haosheng Shi",
   title: "Client & Optical Researcher",
-  organization: "LieOptics",
+  organization: "LieOptics & UNC Department of Computer Science",
+  email: "haosheng@cs.unc.edu",
 };
 
 export const instructorsSection = {
