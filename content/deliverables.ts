@@ -144,8 +144,8 @@ export const deliverables: readonly Deliverable[] = [
     name: "Client hand-off plan",
     dueDate: "2026-11-30",
     status: "Submitted",
-    href: "https://github.com/SarathyS101/team_website/blob/docs/test-doc-handoff-plans/docs/clientHandoffPlan.md",
-    note: "Internal planning document for the instructor/coach, not for the client. How the client obtains, installs, and runs the packaged app, costs, and the hand-off video plan. TODO: date is the team's internal target; confirm against the course page.",
+    href: "https://drive.google.com/file/d/12N76uvcUGz1cfNL9oteLx0wVvZOPWqoD/view?usp=sharing",
+    note: "The client handoff guide is available and covers installation, first-run verification, and ongoing maintenance. The handoff appointment is pending confirmation.",
   },
   {
     name: "D5. Code and final presentation",
